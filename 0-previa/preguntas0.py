@@ -247,7 +247,7 @@ respuestas[(1,7,"Condicional")] = [
 0, # 13. P(Y=1|X=1): 4/6
 0, # 14. P(Y=1|X=1): 5/6
 0, # 15. Ninguna de las anteriores
-"Justifique brevemente: Teorema de bayes donde P(Y = 1|X = 1) = P(X=1, Y=1)/P(X=1).",
+"Justifique brevemente: Definición de probabilidad condicional en donde, P(Y = 1|X = 1) = P(X=1, Y=1)/P(X=1).",
 ]
 
 
