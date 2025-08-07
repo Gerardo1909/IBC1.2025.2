@@ -93,7 +93,7 @@ plt.show()
 no_monty_df[no_monty_df.CajaElegida == no_monty_df.CajaAbierta]
 
 
-# ## Interpretación y conclusiones
+# ## Interpretación y proposición de modelo causal
 
 # Entonces sabemos que no es Monty Hall ya que puede abrir la caja que elegimos, **pero eso solo va a pasar si la caja no tiene el regalo**. Esto nos dejaría
 # con dos posibles escenarios:
@@ -108,3 +108,15 @@ no_monty_df[no_monty_df.CajaElegida == no_monty_df.CajaAbierta]
 # 
 # Podemos pensarlo como que la puerta distinta a la que el particpante elige tuvo la oportunidad de "someterse a prueba" pero el presentador
 # no hizo tal cosa y terminó eligiendo la puerta en donde seguro estaba la cabra. Ahí el porque se dobla la probabilidad.
+
+# ### Posible modelo causal
+
+# En base a lo que planteaba antes para este caso donde no hay Monty Hall, pensé en el siguiente modelo causal:
+# 
+# ```mermaid
+# flowchart TD
+#     A[Ubicación regalo] --> B(Caja Abierta)
+#     C[Caja elegida] 
+# ```
+# 
+# Notar que no se toma en cuenta a la caja elegida, el presentador solo debe considerar la caja en donde está el regalo.
