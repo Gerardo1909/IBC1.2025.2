@@ -1,0 +1,2 @@
+all:
+	sh download.sh
